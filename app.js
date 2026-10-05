@@ -7554,7 +7554,6 @@ function handleAction(
       syncManualStudyHistory(item.id, item.effectiveDuration, item.date);
       saveState();
       closeModal();
-      render();
 
       toast(
         "Estudo atualizado."
