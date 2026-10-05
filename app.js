@@ -7403,7 +7403,6 @@ function handleAction(
     const plan = (state.data.studyPlans || []).find(x => x.id === el.dataset.id);
     if (plan) plan.done = !plan.done;
     saveState();
-    render();
     return;
   }
 
@@ -7437,7 +7436,6 @@ function handleAction(
     }
 
     saveState();
-    render();
 
     return;
   }
